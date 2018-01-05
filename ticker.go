@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-const url = "https://api.coinmarketcap.com/v1/ticker/?convert=JPY"
+const url = "https://api.coinmarketcap.com/v1/ticker/?convert=JPY&limit=0"
 
 func GetAllCoinData() (Coins, error) {
 	req, err := http.NewRequest("GET", url, nil)
